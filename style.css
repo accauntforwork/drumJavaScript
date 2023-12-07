@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu", "sans-serif";
+  background: url(./grum-baground.jpg) no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2 {
+  font-family: "Lobster", "cursive";
+}
+h1 {
+  color: #ffc600;
+  font-size: 40px;
+}
+.drum-items {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.drum-item {
+  margin: 3px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drum-item:hover {
+  transform: scale(1.1);
+  border: 5px solid #ffc600;
+}
+.drum-item > p {
+  color: #ffc600;
+  font-size: 12.8px;
+  margin-top: 3px;
+}
+h2 {
+  color: #ffc600;
+  font-size: 24px;
+  text-align: center;
+}
+.pressed {
+  transform: scale(1.1);
+  border: 5px solid #ffc600;
+}
